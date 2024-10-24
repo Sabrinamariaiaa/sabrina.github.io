@@ -3,83 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiktivt Sminkmärke</title>
+    <title>Glow Beauty</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #FFC0CB;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #F5C6CE; /* Ljusrosa bakgrund */
+            color: #000; /* Svart text */
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #800020;
-            color: white;
-            padding: 20px;
             display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Menyn på vänster sida */
+        nav {
+            background-color: #FFF9F3; /* Ljus bakgrund för menyn */
+            padding: 20px;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
         }
+
         nav a {
-            color: white;
-            margin: 0 15px;
             text-decoration: none;
+            color: black;
             font-size: 18px;
+            margin-bottom: 15px;
         }
-        .hero {
-            background-image: url('hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 48px;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 50px;
-        }
-        .product {
-            background-color: #fff;
+
+        /* Innehållssektion */
+        main {
+            margin-left: 220px; /* Ger plats för menyn */
             padding: 20px;
-            border: 1px solid #ddd;
-            text-align: center;
+            flex-grow: 1;
         }
+
+        /* Footer */
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #FFF9F3;
+            padding: 10px;
             text-align: center;
-            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 220px;
+            right: 0;
         }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
     </style>
 </head>
 <body>
 
-<header>
-    <div class="logo">Fiktivt Sminkmärke</div>
+    <!-- Meny till vänster -->
     <nav>
-        <a href="#">Produkter</a>
-        <a href="#">Om Oss</a>
-        <a href="#">Blogg</a>
-        <a href="#">Kontakt</a>
+        <div>
+            <a href="#">Hem</a>
+            <a href="#">Produkter</a>
+            <a href="#">Nyheter</a>
+            <a href="#">Blogg</a>
+        </div>
     </nav>
-</header>
 
-<div class="hero">
-    <h1>Upptäck Skönheten I Detaljerna</h1>
-    <button>Shoppa Nu</button>
-</div>
+    <!-- Huvudinnehåll -->
+    <main>
+        <h1>Välkommen till Fiktivt Sminkmärke</h1>
+        <p>Här hittar du de senaste produkterna och tipsen för att skapa den perfekta looken. Upptäck våra kollektioner och bli inspirerad av våra blogginlägg.</p>
+    </main>
 
-<section class="product-grid">
-    <div class="product">
-        <img src="lipstick.jpg" alt="Läppstift">
-        <h2>Läppstift</h2>
-        <p>Pris: 199 kr</p>
-        <button>Lägg i kundvagn</button>
+    <!-- Footer längst ner -->
+    <footer>
+        <a href="#">Kontakt</a>
+        <a href="#">Om oss</a>
+    </footer>
+
+</body>
+</html>
